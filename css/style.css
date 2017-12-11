@@ -1,0 +1,192 @@
+/*======================================
+	base rules
+======================================*/
+
+* { 
+  box-sizing: border-box;
+}
+
+body{
+	text-align:center;
+	background-color: rgb(243,243,245);
+	font-family: "Open Sans"
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+ul{
+	list-style-type: none;
+	margin:0;
+}
+
+li{
+	display:inline-block;
+	font-family: "Saira Semi Condensed";
+	font-size: 1.35rem;
+	color: #6699d8;
+	padding-right: 3.25rem;
+
+}
+
+.wrapper{
+	margin:0 auto;
+	max-width: 375px;
+	width: 95%;
+}
+
+.header .footer{
+	max-width: 100%;
+}
+
+.heros__fullWidth{ 
+--container-width: 100%;
+  
+  height: calc(100vw * var(--ratio));
+  max-height: calc(var(--container-width) * var(--ratio));
+
+  width: 100%;
+  max-width: var(--container-width);  
+}
+
+.header__Lrg{
+	display: none;
+}
+
+
+.header .nav--mobile{
+	color:#91bcf1;
+	position: absolute;
+	top:10px;
+	right: 20px;
+}
+
+
+.dNav{
+	display: none;
+}
+
+.logo{
+	width: 150px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.header__dlogo{
+	display: none;
+}
+
+.searchBox{
+	position:relative;
+	font-size:16px;
+	padding:1em;
+}
+
+.searchBox input{
+    border: 1px solid #91bcf1;
+    border-radius: 15px;
+    height: 40px;
+    text-indent: 35px;
+	width: 100%;
+}
+
+input::placeholder{
+	color: #cacbcc;
+}
+
+input:focus{
+	outline:none; 
+}
+
+.searchBox .icon{
+	color:#cacbcc;
+	position:absolute;
+	top: 26.5px;
+	left: 8%;
+}
+
+.gallery{
+	padding: 1rem;
+	margin-top: 2rem;
+	
+}
+
+
+
+/*======================================
+	Media Quieres
+======================================*/
+
+
+
+
+
+
+/*===========================
+	tablet
+============================*/
+
+@media screen and (min-width: 768px){
+	.wrapper{
+		max-width: 768px;
+		width: 95%;
+	}
+	
+	.searchBox {
+		width: 75%;
+		margin: 0 auto;
+	}
+	
+	.searchBox input{
+		width: 100%;
+	}
+
+	.searchBox .icon{
+
+		left: 30px;
+	}
+
+}
+
+
+
+/*===========================
+	Desktop
+============================*/
+
+
+@media screen and (min-width: 900px){
+	.wrapper{
+		max-width: 1200px;
+		width: 95%;
+	}
+
+	.header__Mob{
+		display: none;
+	}
+
+	.header__Lrg{
+		display: block;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.nav--mobile{
+		display: none;
+	}
+
+	ul.dNav{
+	background-color: rgba(255,255,255 .5) !important;
+	display: block;
+	height: 1.5rem;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	padding: 1.25rem;
+	z-index: 20;
+	}
+}
