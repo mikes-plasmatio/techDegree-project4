@@ -5,4 +5,4 @@ sizes: mobile, tablet, desktop.
 
 built and tested in Chrome (current version. 63 i think)
 
-The links in the UL of desktop version are FPO (for placement only) so not live.
+The only live link in desktop version is Gallery the rest are FPO (for position only).
